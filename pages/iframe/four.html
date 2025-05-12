@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+        }
+        .box .wrapper{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .box .wrapper img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .box .wrapper .usrInfo{
+            width: 360px;
+    height: 27px;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 420px;
+    top: 383px;
+        }
+    </style>
+<body>
+    <div class="box">
+        <div class="wrapper">
+            <img src="../../images/githubPage5.png" alt="">
+            <div class="usrInfo" onclick="clickSettings()">
+            </div>
+            <div class="disan"></div>
+        </div>
+    </div>
+    
+    <script>
+        function clickSettings(){
+            console.log("click settings")
+            let disan = document.getElementsByClassName("disan")
+            window.location.href = "../iframe/five.html"
+        }
+    </script>
+</body>
+</html>
