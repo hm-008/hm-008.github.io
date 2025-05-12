@@ -93,13 +93,13 @@
 			function login() {
 				const countdownText = document.getElementById('countdownText').value;
 				const error = document.getElementById('error');
+				usr = countdownText
 				sessionStorage.setItem('login_user', usr);
 				if (countdownText === "123456") {
-					usr = "A"
 					// 修改跳转路径，返回上一级目录
-					window.location.href = './pages/test.html'
+					window.location.href = './test.html'
 				} else if (countdownText === "666666") {
-					window.location.href = './pages/粒子特效.html';
+					window.location.href = './粒子特效.html';
 				} else if (countdownText === "888888") {
 					window.location.href = "../index.html"
 				} else {

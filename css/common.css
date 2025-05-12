@@ -1,0 +1,95 @@
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 顶部通栏 */
+.header {
+    background-color: #333333;
+    height: 52px;
+}
+
+.header .wrapper ul {
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    align-items: center;
+}
+
+.header .wrapper ul li a {
+    color: white;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #999999;
+}
+
+.header .wrapper ul li a:hover {
+    color: #5EB69C;
+}
+
+/* 最后一个去掉边框 */
+.header .wrapper ul li a.iconfont {
+    border-right: none;
+}
+
+.header .wrapper ul li a span {
+    padding-left: 10px;
+}
+
+
+/* 快捷导航 */
+.nav {
+    background-color: white;
+}
+
+.nav .wrapper {
+    height: 132px;
+    display: flex;
+    align-items: center;
+}
+
+.nav .wrapper .logo a img {
+    width: 200px;
+    height: 88px;
+}
+
+.nav .wrapper ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.nav .wrapper ul li a {
+    padding: 10px 0;
+    transition: all .5s;
+    border-bottom: 1px solid #5eb69c00;
+}
+
+.nav .wrapper ul li a:hover {
+    color: #5EB69C;
+    border-color: #5EB69C;
+}
+
+/* 快捷导航-搜索 */
+.nav .wrapper .search {
+    padding: 10px 0;
+    width: 170px;
+    border-bottom: 2px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+}
+.nav .wrapper .search .iconfont{
+    color:#CCCCCC;
+    margin-right: 8px;
+}
+
+/* 将 input 标签的 placeholder的颜色改一下 改成 #CCCCCC */
+/* .nav .wrapper .search input::-webkit-input-placeholder{ */
+/* 
+   明确需求-实现功能（自己 or ai)    ->确认实现代码->文档确认
+*/
+.nav .wrapper .search input::placeholder{
+     color: #CCCCCC;
+}
