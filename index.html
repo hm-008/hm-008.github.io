@@ -20,6 +20,13 @@
     <title>小兔鲜儿-新鲜、惠民、快捷！</title>
 </head>
 
+
+<script>
+    if(sessionStorage.getItem("login_user") != "888888"){
+        window.location.href = "./pages/login.html"
+    }
+</script>
+
 <body>
     <!-- 顶部通栏 -->
      <!-- .header>.wrapper>ul>li*7>a['请先登录'] -->
